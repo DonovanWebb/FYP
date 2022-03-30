@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+R_L = np.linspace(0,10**6)
+r = 5000
+V = 0.8
+
+P_L = V**2*(1-r/(r+R_L))/R_L
+
+plt.plot(P_L, R_L)
+plt.show()
